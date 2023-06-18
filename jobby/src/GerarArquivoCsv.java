@@ -12,7 +12,7 @@ public class GerarArquivoCsv {
 
         try{
             StringBuilder conteudo = new StringBuilder();
-            StringBuilder cabecalho = new StringBuilder();
+            StringBuilder habilidades = new StringBuilder();
             
             conteudo.append("Nome, Cpf, Sexo, DataNascimento, Logradouro, Numero, Uf, Cidade, Bairro, Celular, Email, Telefone, eWhatsapp, Empresa, Profissao, Salario, PretensaoSalarialMin, PretensaoSalarialMax, TemEmprego, Habilidades");
             conteudo.append(System.lineSeparator());
@@ -40,7 +40,12 @@ public class GerarArquivoCsv {
                 conteudo.append(candidato.getDadosProfissionais().getPretensaoSalarialMin() + ",");
                 conteudo.append(candidato.getDadosProfissionais().getPretensaoSalarialMax() + ",");
                 conteudo.append(candidato.getDadosProfissionais().isTemEmprego() + ",");
-                conteudo.append(candidato.getDadosProfissionais().getHabilidades());
+                
+                for(String habilidade : candidato.getDadosProfissionais().getHabilidades()) {
+                    habilidades.append(habilidade + ";");
+                }
+
+                conteudo.append(habilidades);
 
                 conteudo.append(System.lineSeparator());
             }

@@ -1,3 +1,3 @@
 Nome, Cpf, Sexo, DataNascimento, Logradouro, Numero, Uf, Cidade, Bairro, Celular, Email, Telefone, eWhatsapp, Empresa, Profissao, Salario, PretensaoSalarialMin, PretensaoSalarialMax, TemEmprego, Habilidades
-Fernando Zoe,21758479000,MASCULINO,1999-12-05,Avenida Mascarenhas,45,PE,Olinda,Jardim Atlântico,81999805578,fernando@gmail.com,33773291,true,LTDH,Programador,0.0,3.5,5.5,true,[Java, Postgree]
-Tales Soares,27121091046,MASCULINO,1978-12-22,Avenida Domingos Ferreira,327,PE,Jaboatão dos Guararapes,Piedade,8187885623,tales@gmail.com,337778855,true,Digital Life,Programador Front-end,0.0,3.0,5.5,false,[HTML, CSS]
+Fernando Zoe,21758479000,MASCULINO,1999-12-05,Avenida Mascarenhas,45,PE,Olinda,Jardim Atlântico,81999805578,fernando@gmail.com,33773291,true,LTDH,Programador,0.0,3.5,5.5,true,Java;Postgree;
+Tales Soares,27121091046,MASCULINO,1978-12-22,Avenida Domingos Ferreira,327,PE,Jaboatão dos Guararapes,Piedade,8187885623,tales@gmail.com,337778855,true,Digital Life,Programador Front-end,0.0,3.0,5.5,false,Java;Postgree;HTML;CSS;
