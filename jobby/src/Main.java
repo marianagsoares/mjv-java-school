@@ -14,7 +14,7 @@ public class Main {
 
         DadosEndereco dadosEnderecoC1 = new DadosEndereco("Avenida Mascarenhas", 45, "Casa", "Jardim Atlântico", "Olinda", "PE");
 
-        DadosContato dadosContatoC1 = new DadosContato("fernando@gmail.com", "33773291", "81999805578");
+        DadosContato dadosContatoC1 = new DadosContato("fernando@gmail.com", "33773291", "81999805578", true);
 
         ArrayList<String> habilidadesC1 = new ArrayList<>();
         habilidadesC1.add("Java");
@@ -31,7 +31,7 @@ public class Main {
 
         DadosEndereco dadosEnderecoC2 = new DadosEndereco("Avenida Domingos Ferreira", 327, "Apartamento 303", "Piedade", "Jaboatão dos Guararapes", "PE");
 
-        DadosContato dadosContatoC2 = new DadosContato("tales@gmail.com", "337778855", "8187885623");
+        DadosContato dadosContatoC2 = new DadosContato("tales@gmail.com", "337778855", "8187885623", true);
 
         ArrayList<String> habilidadesC2 = new ArrayList<>();
         habilidadesC2.add("HTML");

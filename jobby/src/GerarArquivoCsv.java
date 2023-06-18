@@ -13,11 +13,11 @@ public class GerarArquivoCsv {
         try{
             StringBuilder conteudo = new StringBuilder();
             StringBuilder cabecalho = new StringBuilder();
+            
+            conteudo.append("Nome, Cpf, Sexo, DataNascimento, Logradouro, Numero, Uf, Cidade, Bairro, Celular, Email, Telefone, eWhatsapp, Empresa, Profissao, Salario, PretensaoSalarialMin, PretensaoSalarialMax, TemEmprego, Habilidades");
+            conteudo.append(System.lineSeparator());
 
             for(Candidato candidato : candidatos){
-                conteudo.append("Dados Pessoais,,,,Dados residenciais,,,,,Dados de contato,,,Dados profissionais,,,,,,,");
-                conteudo.append(System.lineSeparator());
-                
                 conteudo.append(candidato.getDadosPessoais().getNome() + ",");
                 conteudo.append(candidato.getDadosPessoais().getCpf() + ",");
                 conteudo.append(candidato.getDadosPessoais().getSexo() + ",");
@@ -32,6 +32,7 @@ public class GerarArquivoCsv {
                 conteudo.append(candidato.getDadosContato().getCelular() + ",");
                 conteudo.append(candidato.getDadosContato().getEmail() + ",");
                 conteudo.append(candidato.getDadosContato().getTelefone() + ",");
+                conteudo.append(candidato.getDadosContato().isEWhatsapp() + ",");
 
                 conteudo.append(candidato.getDadosProfissionais().getEmpresa() + ",");
                 conteudo.append(candidato.getDadosProfissionais().getProfissao() + ",");
@@ -43,8 +44,9 @@ public class GerarArquivoCsv {
 
                 conteudo.append(System.lineSeparator());
             }
+
             System.out.println(conteudo.toString());
-            Path caminhoArquivoCsv = Paths.get("C:\\Users\\Mariana\\Desktop\\java-mjv\\mjv-java-school\\jobby\\src\\candidatos.csv");
+            Path caminhoArquivoCsv = Paths.get("C:\\Users\\Mariana\\Desktop\\java-mjv\\mjv-java-school\\candidatos.csv");
 
             Files.write(caminhoArquivoCsv, conteudo.toString().getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE);
         }catch(IOException e){
