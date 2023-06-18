@@ -4,10 +4,13 @@ public class DadosContato {
     private String telefone;
     private String celular;
 
-    public DadosContato(String email, String telefone, String celular){
+    private boolean eWhatsapp;
+
+    public DadosContato(String email, String telefone, String celular, boolean eWhatsapp){
         this.email = email;
         this.telefone = telefone;
         this.celular = celular;
+        this.eWhatsapp = eWhatsapp;
     }
 
     public String getEmail() {
@@ -32,5 +35,13 @@ public class DadosContato {
 
     public void setCelular(String celular) {
         this.celular = celular;
+    }
+
+    public boolean isEWhatsapp() {
+        return eWhatsapp;
+    }
+
+    public void setEWhatsapp(boolean eWhatsapp) {
+        this.eWhatsapp = eWhatsapp;
     }
 }
