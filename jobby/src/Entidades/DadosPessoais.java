@@ -1,3 +1,6 @@
+package Entidades;
+
+import Enums.Sexo;
 import java.time.LocalDate;
 
 public class DadosPessoais {

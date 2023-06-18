@@ -1,5 +1,6 @@
-public class DadosEndereco {
+package Entidades;
 
+public class DadosEndereco {
     private String logradouro;
     private int numero;
     private String complemento;
