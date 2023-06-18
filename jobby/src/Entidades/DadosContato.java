@@ -1,5 +1,6 @@
-public class DadosContato {
+package Entidades;
 
+public class DadosContato {
     private String email;
     private String telefone;
     private String celular;

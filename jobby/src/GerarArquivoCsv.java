@@ -1,3 +1,4 @@
+import Entidades.Candidato;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -40,6 +41,7 @@ public class GerarArquivoCsv {
                 conteudo.append(candidato.getDadosProfissionais().getPretensaoSalarialMin() + ",");
                 conteudo.append(candidato.getDadosProfissionais().getPretensaoSalarialMax() + ",");
                 conteudo.append(candidato.getDadosProfissionais().isTemEmprego() + ",");
+               // conteudo.append(candidato.getDadosProfissionais().getHabilidades());
                 
                 for(String habilidade : candidato.getDadosProfissionais().getHabilidades()) {
                     habilidades.append(habilidade + ";");

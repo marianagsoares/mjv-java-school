@@ -1,3 +1,5 @@
+package Entidades;
+
 public class Candidato {
     private DadosPessoais dadosPessoais;
     private DadosEndereco dadosEndereco;

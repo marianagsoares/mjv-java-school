@@ -1,3 +1,6 @@
+import Entidades.*;
+import Enums.Sexo;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
